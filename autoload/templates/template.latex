@@ -1,0 +1,73 @@
+\documentclass[$if(fontsize)$$fontsize$$else$11pt$endif$]{$if(documentclass)$$documentclass$$else$jarticle$endif$}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{newcent}             % PDFへの変換後の品質を高める
+
+$if(documenttype)$
+\usepackage[$documenttype$$if(nosupervisor)$,nosupervisor$endif$]{fireport}
+$if(lecture)$
+\lecture{$lecture$}
+$endif$
+$else$
+$if(nosupervisor)$
+\usepackage[nosupervisor]{fireport}
+$else$
+\usepackage{fireport}
+$endif$
+$endif$
+
+\usepackage{listings,jlisting}
+\lstset{%
+  language={sh},
+  basicstyle={\ttfamily},%
+  frame={tblr},
+  numbers=left,%
+  numberstyle={\ttfamily\small},
+  lineskip=-0.5ex,
+  breaklines=true,
+}
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(id)$
+\id{$id$}
+$endif$
+$if(author)$
+\author{$author$}
+$endif$
+$if(teacher)$
+\teacher{$teacher$}
+$endif$
+
+\begin{document}
+\maketitle
+
+$if(toc)$
+{
+$if(colorlinks)$
+\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+$endif$
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
+$endif$
+
+$if(lot)$
+\listoftables
+$endif$
+
+$if(lof)$
+\listoffigures
+$endif$
+
+$body$
+
+$if(references)$
+\begin{thebibliography}{99}
+$for(references)$
+\bibitem{$references.id$} $if(references.author)$$references.author$，$endif$$references.title$，$if(references.container-title)$$references.container-title$，$endif$$if(references.volume)$$references.volume$，$endif$$if(references.page)$$references.page$，$endif$$if(references.issued)$$references.issued$$endif$．
+$endfor$
+\end{thebibliography}
+$endif$
+
+\end{document}
