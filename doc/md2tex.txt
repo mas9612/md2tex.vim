@@ -25,31 +25,31 @@ License: MIT  {{{
 
 CONTENTS					*md2tex-contents*
 
-Introduction		|md2tex|
-Commands		|md2tex-commands|
-Markdown Notations	|md2tex-markdown-notations|
-  Body			|md2tex-markdown-body|
-  Metadata		|md2tex-markdown-metadata|
-    fontsize		|md2tex-fontsize|
-    documentclass	|md2tex-documentclass|
-    title		|md2tex-title|
-    id			|md2tex-id|
-    author		|md2tex-author|
-    teacher		|md2tex-teacher|
-    toc			|md2tex-toc|
-    lof			|md2tex-lof|
-    lot			|md2tex-lot|
-    documenttype	|md2tex-documenttype|
-    nosupervisor	|md2tex-nosupervisor|
-    references		|md2tex-references|
-      id		|md2tex-references-id|
-      author		|md2tex-references-author|
-      title		|md2tex-references-title|
-      container-title	|md2tex-references-container-title|
-      volume		|md2tex-references-volume|
-      page		|md2tex-references-page|
-      issued		|md2tex-references-issued|
-Example Markdown	|md2tex-example|
+Introduction			|md2tex|
+Commands			|md2tex-commands|
+Markdown Notations		|md2tex-markdown-notations|
+  Body				|md2tex-markdown-body|
+  Metadata			|md2tex-markdown-metadata|
+    fontsize			|md2tex-fontsize|
+    documentclass		|md2tex-documentclass|
+    title			|md2tex-title|
+    id				|md2tex-id|
+    author			|md2tex-author|
+    teacher			|md2tex-teacher|
+    toc				|md2tex-toc|
+    lof				|md2tex-lof|
+    lot				|md2tex-lot|
+    documenttype		|md2tex-documenttype|
+    nosupervisor		|md2tex-nosupervisor|
+    references			|md2tex-references|
+      id			|md2tex-references-id|
+      author			|md2tex-references-author|
+      title			|md2tex-references-title|
+      container-title		|md2tex-references-container-title|
+      volume			|md2tex-references-volume|
+      page			|md2tex-references-page|
+      issued			|md2tex-references-issued|
+Example Markdown		|md2tex-example|
 
 ==============================================================================
 INTRODUCTION					*md2tex*
