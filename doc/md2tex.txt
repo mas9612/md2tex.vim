@@ -55,8 +55,10 @@ Example Markdown	|md2tex-example|
 INTRODUCTION					*md2tex*
 
 md2tex.vim is a plugin to generate LaTeX or PDF from Markdown with Pandoc.
+
 To use this plugin, you must install fireport.sty to compile TeX.
 fireport.sty is available from https://github.com/High-Hill/tex_gaiyo.
+
 You need to install pandoc command to generate LaTeX file, latexmk command to
 generate PDF.
 
@@ -121,46 +123,36 @@ the top, --- or ... (three dots) at the bottom.
 Available variables are below.
 
 fontsize					*md2tex-fontsize*
-
 	Fontsize of a document.
 
 documentclass					*md2tex-documentclass*
-
 	Documentclass for LaTeX. To use Japanese, set this to "jarticle".
 
 title						*md2tex-title*
-
 	Document title.
 
 id						*md2tex-id*
-
 	Student id.
 
 author						*md2tex-author*
-
 	Author name.
 
 teacher						*md2tex-teacher*
-
 	Teacher name.
 
 toc						*md2tex-toc*
-
 	Boolean. Whether include table of contents or not. If this variable is
 	set to "on", table of contents are included. If "off", not included.
 
 lof						*md2tex-lof*
-
 	Boolean. Whether include list of figures. If this variable is set to
 	"on", list of figures are included. If "off", not included.
 
 lot						*md2tex-lot*
-
 	Boolean. Whether include list of tables. If this variable is set to
 	"on", list of tables are included. If "off", not included.
 
 documenttype					*md2tex-documenttype*
-
 	Document type. This value is set to fireport.sty. If you don't set
 	this variable, document style is set for senior.
 	Possible values are:
@@ -173,17 +165,14 @@ documenttype					*md2tex-documenttype*
 	- report: To write regular report
 
 lecture						*md2tex-lecture*
-
 	Name of lecture. This variable is used only if documenttype is set to
 	report.
 
 nosupervisor					*md2tex-nosupervisor*
-
 	Boolean. If this is set to "on", teacher name is not printed. If this
 	is set to "off", teacher name will be printed. Default is "off".
 
 references					*md2tex-references*
-
 	References. This variable can store multiple references.
 
 	Example: >
@@ -196,32 +185,25 @@ references					*md2tex-references*
 	    title: quz
 <
 references.id					*md2tex-references-id*
-
 	Reference id. This value can refer from document by using \cite{}.
 
 references.author				*md2tex-references-author*
-
 	Author of the reference.
 
 references.title				*md2tex-references-title*
-
 	Title of the reference.
 
 references.container-title
 *md2tex-references-container-title*
-
 	Title of the container holding the reference.
 
 references.volume				*md2tex-references-volume*
-
 	Volume of holding the reference.
 
 references.page					*md2tex-references-volume*
-
 	Page of the reference.
 
 references.issued				*md2tex-references-issued*
-
 	The date when the reference is issued.
 
 ==============================================================================
