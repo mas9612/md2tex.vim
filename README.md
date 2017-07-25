@@ -13,3 +13,22 @@ This plugin (and pandoc template) is not tested well. If you find any bugs or pr
     - available from [here](https://github.com/High-Hill/tex_gaiyo).
 * Pandoc
 * latexmk
+
+
+## Install
+
+### vim-plug
+
+Add following line to your `.vimrc` .
+
+```
+Plug 'mas9612/md2tex.vim'
+```
+
+### dein.vim
+
+Add following line to your `.vimrc` .
+
+```
+call dein#add('mas9612/md2tex.vim')
+```
