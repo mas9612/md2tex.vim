@@ -11,7 +11,7 @@ function! md2tex#convertToTeX()
   if executable('pandoc') == 1
     let template = s:base_dir . '/autoload/templates/template.latex'
     let output = expand('%:r') . '.tex'
-    let command = 'pandoc -s --template=' . template . ' -o ' . output . ' ' . expand('%')
+    let command = 'pandoc --listings -s --template=' . template . ' -o ' . output . ' ' . expand('%')
     call system(command)
   else
     echohl ErrorMsg
