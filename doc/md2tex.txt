@@ -54,7 +54,7 @@ Example Markdown		|md2tex-example|
 ==============================================================================
 INTRODUCTION					*md2tex*
 
-md2tex.vim is a plugin to generate LaTeX or PDF from Markdown with Pandoc.
+md2tex.vim is a plugin to generate LaTeX or PDF from Markdown by using Pandoc.
 
 To use this plugin, you must install fireport.sty to compile TeX.
 fireport.sty is available from https://github.com/High-Hill/tex_gaiyo.
@@ -115,10 +115,10 @@ DEFINITION LISTS				*md2tex-definition-lists*
 ------------------------------------------------------------------------------
 METADATA					*md2tex-markdown-metadata*
 
-Currently, you can use some variables in Markdown to define various parameter
-or information. You can set metadata in YAML block. YAML block may occur
-anywhere in the document. YAML block is delimited by --- (three hyphens) at
-the top, --- or ... (three dots) at the bottom.
+You can use some variables in Markdown to define various parameter or
+information. You can set metadata in YAML block. YAML block may occur anywhere
+in the document. YAML block is delimited by --- (three hyphens) at the top,
+--- or ... (three dots) at the bottom.
 
 Available variables are below.
 
