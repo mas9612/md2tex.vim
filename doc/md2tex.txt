@@ -200,7 +200,7 @@ references.container-title
 references.volume				*md2tex-references-volume*
 	Volume of holding the reference.
 
-references.page					*md2tex-references-volume*
+references.page					*md2tex-references-page*
 	Page of the reference.
 
 references.issued				*md2tex-references-issued*
